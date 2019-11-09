@@ -1,0 +1,145 @@
+@import url('https//fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import "vars";
+
+html, body {height: 100%}
+
+.btn:focus,
+.btn:active{
+    box-shadow:none!important;
+    outline:0!important;
+}
+
+.btn {
+  padding: 15px 20px!important;
+  letter-spacing: 0.15em!important;
+  text-transform: uppercase;
+}
+
+* {
+  outline: none!important;
+  color: #000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif!important;
+  font-weight: 400!important;
+  font-size: 16px!important;
+}
+
+header {
+  #nav i {
+      font-size: 25px;
+      color: $main-color;
+  }
+  span {
+      position: relative;
+      font-size: 20px;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 3px;
+          background: $main-color;
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+    }
+  }
+}
+
+#first {
+  padding: 4% 0!important;
+  border-bottom: 2px solid silver;
+  .jumbotron {
+    p {
+      font-size: 14px;
+    }
+    .jumb {
+      padding-right: 3%!important;
+      .podparagraf {
+        font-size: 20px;
+      }
+      .txt {
+        color: $text-color;
+      }
+    }
+  }
+  #img-jumb {
+    background: $img-color;
+  }
+}
+
+  #second {
+    span {
+        position: relative;
+        font-size: 20px;
+        letter-spacing: 0.05em!important;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 30%;
+            height: 3px;
+            background: $main-color;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+      }
+    }
+    .big-card{
+      border-bottom: 2px solid silver;
+      .card {
+        border-radius: 0;
+        width: 45%;
+        border: none;
+        padding-bottom: 4%!important;
+        padding-top: 3%!important;
+
+        .btn {
+          padding: 15px 30px!important;
+        }
+        .img-card {
+          background: $img-color;
+          height: 300px;
+        }
+      }
+    }
+  }
+#three {
+  .mini-card {
+    margin-top: 7%;
+    .mini {
+      width: 20%;
+      border: none;
+    }
+
+    .btn {
+      padding: 5px 20px!important;
+    }
+    .img-card {
+      background: $img-color;
+      height: 150px;
+    }
+  }
+}
+
+#last {
+  span {
+      position: relative;
+      font-size: 20px;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 15%;
+          height: 3px;
+          background: $main-color;
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+    }
+  }
+  i {
+    font-size: 45px;
+    color: $main-color;
+    padding: 15px;
+  }
+}
